@@ -106,7 +106,7 @@ npm init -y
 ### 2.3 Install Dependencies
 
 ```bash
-npm install express cors dotenv knex mysql2 body-parser joi uuid
+npm install 
 npm install --save-dev nodemon
 ```
 
@@ -266,39 +266,6 @@ tasmac_online/
     └── package.json
 ```
 
----
-
-## 🐛 Common Issues & Solutions
-
-### Issue 1: Database Connection Error
-**Solution:** Check MySQL credentials in `.env` file
-
-### Issue 2: Port Already in Use
-**Solution:** 
-```bash
-# Kill process on port 5000
-kill -9 $(lsof -t -i:5000)
-
-# Or use different port in .env
-PORT=5001
-```
-
-### Issue 3: CORS Error
-**Solution:** Backend already configured with CORS. Ensure frontend is calling correct API URL.
-
-### Issue 4: Module Not Found
-**Solution:**
-```bash
-# Clear node_modules and reinstall
-rm -rf node_modules package-lock.json
-npm install
-```
-
-### Issue 5: Webpack Build Error
-**Solution:** Ensure all webpack configs are in `webpack/` folder and babel presets are installed.
-
----
-
 ## 📊 API Endpoints Summary
 
 | Method | Endpoint | Description |
@@ -328,16 +295,6 @@ npm install
 - [x] Form validation
 - [x] Stock management
 - [x] Error handling
-
----
-
-## 📞 Support
-
-For issues or questions:
-- Check the documentation
-- Review console logs
-- Test API endpoints individually
-- Verify database connections
 
 ---
 
